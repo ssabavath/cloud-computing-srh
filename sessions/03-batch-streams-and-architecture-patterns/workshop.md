@@ -20,7 +20,9 @@ Today you get your launch customer: the shipper whose contract sets your platfor
 
    From now on, `git pull upstream main` gets new course material, and `git push origin main` saves your work to your fork.
 3. To push from Cloud Shell, GitHub needs a token instead of your password. On GitHub go to **Settings → Developer settings → Personal access tokens → Fine-grained tokens**, and create one for your fork only, with **Contents: read and write**. Paste it when `git push` asks for a password.
-4. I'll hand out the launch customers. Find yours in [project/shippers.md](../../project/shippers.md) and write down its ID and three targets: freshness, reliability and budget.
+4. Find your first name on the **Who has which launch customer** slide. Then look up your customer in [project/shippers.md](../../project/shippers.md) and write down its ID, its lanes and its three targets: freshness, reliability and budget.
+   - **Today's slides:** on GitHub, open [`slides/`](slides/), click the `.pptx` file, then click **Download raw file** (the download icon at the top right of the file).
+   - **Your customer's profile:** `project/shippers.md` is already in your copy of the repo. Open it in Cloud Shell with `cloudshell edit ~/cloud-computing-srh/project/shippers.md`, or download it from GitHub the same way.
 
 ## 2. Delay per lane (25 min)
 
@@ -58,11 +60,12 @@ Copy the [ADR template](../../project/adr-template.md) to `docs/adr/001-<slug>.m
 
 Either answer can be right. What matters is that your reasons come from your launch customer's targets and your evidence.
 
-Save your work:
+Save your work. `git add -A` takes everything you've changed, including your `schedules` table from Wednesday and today's SQL, not just `docs`. Your Terraform state and `terraform.tfvars` stay out: `.gitignore` excludes them.
 
 ```bash
 cd ~/cloud-computing-srh
-git add docs
+git add -A
+git status          # check the list: docs, .tf and .sql files, no tfstate or tfvars
 git commit -m "Session 3: metrics, diagram, ADR 001"
 git push origin main
 ```
