@@ -1,6 +1,6 @@
 # Workshop: freight data into BigQuery
 
-**Time:** about 80 minutes, in Cloud Shell, in your own project. You need Monday's `<project-id>-raw` bucket. The steps are the same on your own account and on the course account.
+**Time:** about 80 minutes, in Cloud Shell, in your own project. You need Monday's `<project-id>-raw` bucket.
 
 ## 1. Generate a month of freight data
 

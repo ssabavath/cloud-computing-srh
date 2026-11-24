@@ -98,7 +98,7 @@ You're encouraged to use AI tools; that's how the industry works now. The rule i
 
 You need two accounts before session 1. Both are free:
 
-- **Google Cloud:** follow [setup/gcp.md](setup/gcp.md). Most of you use the free trial on your own account: $300 of credit for 90 days. A card is needed to verify your identity, but you won't be charged unless you upgrade. If the sign-up fails, I'll host a project for you on the course account instead, with no card needed. Every workshop works on both.
+- **Google Cloud:** follow [setup/gcp.md](setup/gcp.md). Use the free trial on your own account: $300 of credit for 90 days. A card is needed to verify your identity, but you won't be charged unless you upgrade.
 - **Databricks Free Edition:** follow [setup/databricks.md](setup/databricks.md). No card needed.
 
 Some cloud services bill for every hour they run, even when you're not using them. **Every workshop ends with a teardown step. Do it every time**, or you'll burn through your credit.
