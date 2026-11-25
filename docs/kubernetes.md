@@ -19,4 +19,4 @@ REVISION  CHANGE-CAUSE
 
 ## What happened when I deleted the pod
 
-I deleted the pod generator-85dcb4bffc-f67z7 with kubectl delete pod. Within about 1 second a new pod, generator-85dcb4bffc-pmhtv, was Running. I never told >
+When I deleted the generator pod, Kubernetes had a new one running almost immediately. The Deployment is set to keep 1 replica, so as soon as there were 0, its controller started a replacement. I didn't have to restart anything myself.
