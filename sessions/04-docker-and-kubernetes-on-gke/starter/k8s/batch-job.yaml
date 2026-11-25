@@ -11,7 +11,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: generator
-          image: europe-west3-docker.pkg.dev/PROJECT_ID/freight/generator:v1
+          image: europe-west3-docker.pkg.dev/cc-sandeep/freight/generator:v1
           args: ["batch", "--days", "7", "--out", "/data"]
           volumeMounts:
             - name: data

@@ -1,3 +1,4 @@
+
 # The event generator as a Kubernetes Deployment: "keep this many copies running".
 apiVersion: apps/v1
 kind: Deployment
@@ -18,8 +19,8 @@ spec:
     spec:
       containers:
         - name: generator
-          # Replace PROJECT_ID with your project ID (step 5 does it for you).
-          image: europe-west3-docker.pkg.dev/PROJECT_ID/freight/generator:v1
+          # Replace cc-sandeep with your project ID (step 5 does it for you).
+          image: europe-west3-docker.pkg.dev/cc-sandeep/freight/generator:v1
           args: ["stream"]
           env:
             - name: SINK
