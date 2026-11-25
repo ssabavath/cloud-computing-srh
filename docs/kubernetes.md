@@ -19,4 +19,4 @@ REVISION  CHANGE-CAUSE
 
 ## What happened when I deleted the pod
 
-I deleted the pod generator-85dcb4bffc-f67z7 with kubectl delete pod. Within about 1 second a new pod, generator-85dcb4bffc-pmhtv, was Running. I never told Kubernetes to restart anything: the Deployment declares 1 replica, so when the actual count dropped to 0, its controller created a replacement to match the desired state. This reconcile loop (desired state against actual state) is what makes Kubernetes self-healing.
+I deleted the pod generator-85dcb4bffc-f67z7 with kubectl delete pod. Within about 1 second a new pod, generator-85dcb4bffc-pmhtv, was Running. I never told >
