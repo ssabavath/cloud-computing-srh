@@ -19,7 +19,7 @@ spec:
       containers:
         - name: generator
           # v2 has the Kafka client that works with Kafka 4 (step 1).
-          image: europe-west3-docker.pkg.dev/PROJECT_ID/freight/generator:v2
+          image: europe-west3-docker.pkg.dev/cc-sandeep/freight/generator:v2
           args: ["stream"]
           env:
             - name: SINK
